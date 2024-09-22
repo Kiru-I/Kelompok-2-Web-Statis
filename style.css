@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+/* :root{ */
+    /* background-color: #093d46; */
+    /* text-align: #DF927D; */
+    /* text-decoration: #03055B; */
+/* } */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans" , sans-serif;
+    font-optical-sizing: auto;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #742488, #f33edb, #ebd93e);
+    /* background-color: #093d46; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-between;
+}
+/* .logo h1{
+    font-size: 25px;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 15px;
+    background-color: #3ec2da;
+} */
+uL {
+    border: 2px solid var(black);
+    background-color: #fff;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+a {
+    color: black;
+}
+/* Li a {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 15px;
+    transition: 0.6s;
+} */
+/* .active { */
+    /* background-color: var(black) */
+/* } */
+button {
+    border: 2px solid var(black);
+    background-color: #fff;
+    border-radius: 10px 15px;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(black);
+    cursor: pointer;
+    transition: 0.6s;
+}
+/* button:hover { */
+    /* background-color: #093d46; */
+    /* color: black */
+/* } */
+
+.home-content {
+    padding: 2rem 5rem 2rem 5rem;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
+.home-container {
+    align-items: center;
+    width: 600px;
+}
+.home-container h1 {
+    color:#fff;
+    font-size: 5rem;
+    padding-bottom: 3opx;
+}
+.home-container p {
+    color: #fff;
+    padding-bottom: 20px;
+}
+#explore{
+    margin-left: 20px;
+}
