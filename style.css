@@ -15,19 +15,18 @@
 body {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #742488, #f33edb, #ebd93e);
-    /* background-color: #093d46; */
+    background-color: #5e5e5e;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 nav {
-    background-color: #fff;
+    background-color: #00000083;
     width: 100%;
     padding: 20px;
     display: flex;
     align-items:flex-end;
-    justify-content: space-between;
+    justify-content:space-between
 }
 /* .logo h1{
     font-size: 25px;
@@ -36,9 +35,8 @@ nav {
     padding: 10px 15px;
     background-color: #3ec2da;
 } */
-uL {
-    border: 2px solid var(black);
-    background-color: #fff;
+ul {
+    border: 2px solid var(rgb(255, 255, 255));
     padding: 10px 15px;
     font-size: 18px;
     font-weight: 600;
@@ -47,8 +45,15 @@ uL {
     display: flex;
     gap: 3rem;
 }
+li{
+    color: white;
 
-a {
+}
+li a {
+    color: white;
+    text-decoration: none;
+}
+a{
     color: black;
 }
 /* Li a {
@@ -65,7 +70,7 @@ a {
 /* } */
 button {
     border: 2px solid var(black);
-    background-color: #fff;
+    background-color: #ffffffd3;
     border-radius: 10px 15px;
     padding: 10px 15px;
     font-size: 18px;
@@ -92,7 +97,7 @@ button {
 .home-container h1 {
     color:#fff;
     font-size: 5rem;
-    padding-bottom: 3opx;
+    padding-bottom: 30px;
 }
 .home-container p {
     color: #fff;
@@ -100,4 +105,23 @@ button {
 }
 #explore{
     margin-left: 20px;
+}
+.logo{
+margin-top: 5%;
+margin-left: 5%;
+}
+.logo_icon{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    background-image: url("/Img/ig.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 100%;
+}
+.logo_border{
+border: 15px transparent solid;
+background: 
+    linear-gradient(to top, #742488, #f33edb, #ebd93e) border-box;
+border-radius:100%;
 }
