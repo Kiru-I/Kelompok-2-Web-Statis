@@ -114,7 +114,7 @@ margin-left: 5%;
     width: 500px;
     height: 500px;
     background-color: #fff;
-    background-image: url("Img/ig.png");
+    background-image: url("./Img/ig.png");
     background-repeat: no-repeat;
     background-size:cover;
     border-radius: 100%;
