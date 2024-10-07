@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+/* :root{ */
+    /* background-color: #093d46; */
+    /* text-align: #DF927D; */
+    /* text-decoration: #03055B; */
+/* } */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans" , sans-serif;
+    font-optical-sizing: auto;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #5e5e5e;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav {
+    background-color: #00000083;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items:flex-end;
+    justify-content:space-between
+}
+/* .logo h1{
+    font-size: 25px;
+    color: #fff;
+    border-radius: 25px;
+    padding: 10px 15px;
+    background-color: #3ec2da;
+} */
+ul {
+    border: 2px solid var(rgb(255, 255, 255));
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+li{
+    color: white;
+
+}
+li a {
+    color: white;
+    text-decoration: none;
+}
+.konten{
+    margin: 5%;
+    color: white;
+}
