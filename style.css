@@ -123,3 +123,60 @@ margin-left: 5%;
 border: 0.5rem black solid;
 border-radius:100%;
 }
+@media (max-width: 600px) {
+    nav {
+        background-color: #00000083;
+        width: auto;
+        padding: auto;
+        display: flex;
+        align-items:flex-end;
+        justify-content:space-between
+    }
+    body {
+        width: auto;
+        height: 60rem;
+        background-image: linear-gradient(to bottom right, rgb(76, 26, 205), rgb(235, 21, 107), rgb(144, 72, 196));
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+    }
+    .home-content {
+        display: flex;
+        align-items: center;
+        height: 30rem;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    .home-container {
+        align-items: center;
+        width: 37.5rem;
+    }
+    .home-container h1 {
+        color:#fff;
+        font-size: 5rem;
+        padding-bottom: 1.875rem;
+    }
+    .home-container p {
+        color: #fff;
+        padding-bottom: 1.25rem;
+    }
+    #explore{
+        margin-left: 1.25rem;
+    }
+    .logo{
+    margin-top: 5%;
+    margin-left: 5%;
+    }
+    .logo_icon{
+        width: 20rem;
+        height: 20rem;
+        background-color: #fff;
+        background-image: url("https://kiru-i.github.io/Kelompok-2-Web-Statis/Img/ig.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        border-radius: 100%;
+    }
+    .logo_border{
+    border: 0.5rem black solid;
+    border-radius:100%;
+    }
+}
