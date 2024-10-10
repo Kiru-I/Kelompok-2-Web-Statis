@@ -56,6 +56,15 @@ li a {
 a{
     color: black;
 }
+
+nav ul li a:hover {
+    color: #ff68cf;
+}
+
+div ul li a:hover {
+    color: #ce3dff;
+}
+
 /* Li a {
     color: black;
     font-size: 18px;
