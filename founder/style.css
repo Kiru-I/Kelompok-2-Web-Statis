@@ -96,13 +96,28 @@ p {
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
     nav{
-        justify-content: center;
+        display: grid;  /* Use grid layout */
+        grid-template-columns: repeat(2, 1fr);  /* Create 2 equal-width columns */
+        grid-gap: 10px;  /* Add space between columns */
+        padding: 0;
+        text-align: center;
+        justify-content: space-around;
     }
     .jarak{
-        border-bottom: white 2px solid;
+        border-bottom: white solid 2px;
+        grid-column: span 2;
+        display: flex;
+        justify-content: space-around;  /* Space out the links */
+        padding: 0.5rem;
+    }
+    .nav2{
+        grid-column: span 2;  /* Span across 2 columns */
+        display: flex;
+        justify-content: space-around;  /* Space out the links */
+        padding: 0.5rem;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .konten {
@@ -115,22 +130,29 @@ p {
 }
 
 @media screen and (max-width: 480px) {
-    nav ul {
-        flex-direction: column;
+    nav{
+        display: grid;  /* Use grid layout */
+        grid-template-columns: repeat(2, 1fr);  /* Create 2 equal-width columns */
+        grid-gap: 10px;  /* Add space between columns */
         padding: 0;
         text-align: center;
+        justify-content: space-around;
     }
-
-    nav ul li {
-        margin-bottom: 0.5rem;
+    .jarak{
+        border-bottom: white solid 2px;
+        grid-column: span 2;
+        display: flex;
+        justify-content: space-around;  /* Space out the links */
+        padding: 0.5rem;
     }
-
-    nav ul li a {
-        font-size: 1rem;
+    .nav2{
+        grid-column: span 2;  /* Span across 2 columns */
+        display: flex;
+        justify-content: space-around;  /* Space out the links */
+        padding: 0.5rem;
     }
-
     h1 {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     p {

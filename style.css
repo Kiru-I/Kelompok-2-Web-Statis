@@ -139,10 +139,6 @@ button a {
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        gap: 1rem;
-    }
-
     .home-container h1 {
         font-size: 3rem;
     }
@@ -157,12 +153,25 @@ button a {
         min-height: 60rem;
     }
     nav{
-        justify-content: center;
-        padding: 1.25rem;
+        display: grid;  /* Use grid layout */
+        grid-template-columns: repeat(2, 1fr);  /* Create 2 equal-width columns */
+        grid-gap: 10px;  /* Add space between columns */
+        padding: 0;
+        text-align: center;
+        justify-content: space-around;
     }
     .jarak{
-        margin-bottom: 0.5rem;
         border-bottom: white solid 2px;
+        grid-column: span 2;
+        display: flex;
+        justify-content: space-around;  /* Space out the links */
+        padding: 0.5rem;
+    }
+    .nav2{
+        grid-column: span 2;  /* Span across 2 columns */
+        display: flex;
+        justify-content: space-around;  /* Space out the links */
+        padding: 0.5rem;
     }
     .home-content {
         padding: 2rem 1rem;
@@ -181,5 +190,31 @@ button a {
     button {
         padding: 0.5rem 0.75rem;
         font-size: 1rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    
+    nav {
+        display: grid;  /* Use grid layout */
+        grid-template-columns: repeat(2, 1fr);  /* Create 2 equal-width columns */
+        grid-gap: 10px;  /* Add space between columns */
+        padding: 0;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .jarak{
+        grid-column: span 2;
+        display: flex;
+        justify-content: space-around;  /* Space out the links */
+        padding: 0.5rem;
+    }
+    .nav2{
+        grid-column: span 2;  /* Span across 2 columns */
+        display: flex;
+        justify-content: space-around;  /* Space out the links */
+        padding: 0.5rem;
+    }
+    nav ul li {
+        margin-bottom: 0.5rem;
     }
 }
