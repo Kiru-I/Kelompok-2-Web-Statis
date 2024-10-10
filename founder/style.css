@@ -1,77 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
 
-/* :root{ */
-    /* background-color: #093d46; */
-    /* text-align: #DF927D; */
-    /* text-decoration: #03055B; */
-/* } */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans" , sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
 }
+
 body {
     width: 100%;
-    height: 500vh;
+    min-height: 100vh;
     background-image: linear-gradient(to bottom right, rgb(76, 26, 205), rgb(235, 21, 107), rgb(144, 72, 196));
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
+
 nav {
     background-color: #00000083;
     backdrop-filter: blur(5px);
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 20px;
+    padding: 1.25rem;
     display: flex;
     align-items:flex-end;
-    justify-content:space-between
-}
-
-img {
-    display: flex;
-    /* margin-left: auto;
-    margin-right: auto; */
-    margin: 0 auto;
-    align-items: flex-end;
-}
-/* .logo h1{
-    font-size: 25px;
-    color: #fff;
-    border-radius: 25px;
-    padding: 10px 15px;
-    background-color: #3ec2da;
-} */
-
-.konten{
-    margin: 5%;
-    color: white;
-    text-align: justify;
+    justify-content:space-between;
+    flex-wrap: wrap;
 }
 
 ul {
-    border: 2px solid var(rgb(255, 255, 255));
-    padding: 10px 15px;
-    font-size: 18px;
+    border: 0.125rem solid var(rgb(255, 255, 255));
+    padding: 0.625rem 0.938rem;
+    font-size: 1.125rem;
     font-weight: 600;
     cursor: pointer;
     list-style: none;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
- 
-li{
-    color: white;
 
+li {
+    color: white;
 }
 
 li a {
     color: white;
     text-decoration: none;
+}
+
+a {
+    color: black;
 }
 
 nav ul li a:hover {
@@ -82,12 +65,75 @@ div ul li a:hover {
     color: #ce3dff;
 }
 
+.konten {
+    width: 95%;
+    margin: auto;
+    padding: 1rem;
+    line-height: 1.2;
+    color: white;
+}
 br p {
     margin: 5%;
     text-decoration: none;
     text-align: justify;
 }
-div {
+
+div{
     font-size: 20px;
     color: white;
+}
+.konten img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    nav{
+        justify-content: center;
+    }
+    .jarak{
+        border-bottom: white 2px solid;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .konten {
+        width: 95%;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
 }
