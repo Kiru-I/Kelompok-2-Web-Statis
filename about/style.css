@@ -106,7 +106,7 @@ ul {
     padding: 0 15px;
 }
 
-.footer-co1 h4 {
+/* .footer-co1 h4 {
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
@@ -156,7 +156,7 @@ ul {
 .footer-co1 .social-links a:hover {
     color: #242626;
     background-color:#ffffff;
-}
+} */
 
 /* RESPPONSIVE!!!!! */
 @media(max-width: 767px){
