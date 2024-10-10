@@ -21,7 +21,7 @@ body {
 
 nav {
     background-color: #00000083;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     width: 100%;
@@ -29,6 +29,7 @@ nav {
     display: flex;
     align-items:flex-end;
     justify-content:space-between;
+    z-index: 100;
     flex-wrap: wrap;
 }
 

@@ -21,6 +21,8 @@ body {
 
 nav {
     background-color: #00000083;
+    backdrop-filter: blur(10px);
+    z-index: 100;
     width: 100%;
     padding: 1.25rem;
     display: flex;
