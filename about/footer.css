@@ -1,89 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
 
-/* :root{ */
-    /* background-color: #093d46; */
-    /* text-align: #DF927D; */
-    /* text-decoration: #03055B; */
-/* } */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans" , sans-serif;
-    font-optical-sizing: auto;
 }
-body {
-    width: 100%;
-    height: 400vh;
-    background-image: linear-gradient(to bottom right, rgb(76, 26, 205), rgb(235, 21, 107), rgb(144, 72, 196));
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-nav {
-    background-color: #00000083;
-    backdrop-filter: blur(5px);
-    position: sticky; 
-    top: 0;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    align-items:flex-end;
-    justify-content:space-between
-}
-/* .logo h1{
-    font-size: 25px;
-    color: #fff;
-    border-radius: 25px;
-    padding: 10px 15px;
-    background-color: #3ec2da;
-} */
-ul {
-    border: 2px solid var(rgb(255, 255, 255));
-    padding: 10px 15px;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    gap: 3rem;
-}
-li{
-    color: white;
-
-}
-li a {
-    color: white;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: #ff68cf;
-}
-
-div ul li a:hover {
-    color: #ce3dff;
-}
-
-.konten{
-    margin: 5%;
-    color: white;
-    text-align: justify;
-}
-.content h1 {
-    margin: 5px;
-    color: white;
-    font-size: 50px;
-}
-.content p {
-    margin: 5px;
-    color: white;
-}
-
-div  {
-    font-size: 20px;
-}
-
 .container {
     max-width: 1170px;
     margin: auto;
@@ -106,7 +31,7 @@ ul {
     padding: 0 15px;
 }
 
-/* .footer-co1 h4 {
+.footer-co1 h4 {
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
@@ -156,7 +81,7 @@ ul {
 .footer-co1 .social-links a:hover {
     color: #242626;
     background-color:#ffffff;
-} */
+}
 
 /* RESPPONSIVE!!!!! */
 @media(max-width: 767px){
