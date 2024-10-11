@@ -79,12 +79,6 @@ div{
     font-size: 20px;
     color: white;
 }
-.konten img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
 
 p {
     text-align: justify;
