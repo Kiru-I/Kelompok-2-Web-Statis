@@ -160,3 +160,27 @@ p {
         font-size: 0.9rem;
     }
 }
+@media screen and (max-width: 406px){
+        
+    nav {
+        display: grid;  /* Use grid layout */
+        grid-column: span 2;  /* Create 2 equal-width columns */
+        grid-gap: 10px;  /* Add space between columns */
+        padding: 0;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .jarak li:nth-child(1), .jarak li:nth-child(2),
+    .jarak li:nth-child(3), .jarak li:nth-child(4) {
+        display: inline-block;
+        width: 40%;
+    }
+    .nav2 li {
+        grid-column: span 2;
+        justify-content: space-around;
+        margin-left: 7%;
+    }
+    nav ul li {
+        margin-bottom: 0.5rem;
+    }
+}
