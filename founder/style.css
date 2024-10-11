@@ -8,7 +8,7 @@
     font-optical-sizing: auto;
 }
 
-body {
+html, body {
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, rgb(76, 26, 205), rgb(235, 21, 107), rgb(144, 72, 196));
@@ -17,18 +17,20 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;    
 }
 
 nav {
     background-color: #00000083;
     backdrop-filter: blur(10px);
-    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     width: 100%;
     padding: 1.25rem;
     display: flex;
-    align-items:flex-end;
-    justify-content:space-between;
-    z-index: 100;
+    align-items: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .navpad{
@@ -94,7 +96,6 @@ div{
 p {
     text-align: justify;
 }
-
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
     nav{
@@ -104,6 +105,7 @@ p {
         padding: 0;
         text-align: center;
         justify-content: space-around;
+        width: 1;
     }
     .jarak{
         border-bottom: white solid 2px;
@@ -132,6 +134,7 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+
     nav{
         display: grid;  /* Use grid layout */
         grid-template-columns: repeat(2, 1fr);  /* Create 2 equal-width columns */

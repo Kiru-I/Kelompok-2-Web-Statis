@@ -8,7 +8,7 @@
     font-optical-sizing: auto;
 }
 
-body {
+html, body {
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, rgb(76, 26, 205), rgb(235, 21, 107), rgb(144, 72, 196));
@@ -17,6 +17,7 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;    
 }
 
 nav {
@@ -68,8 +69,8 @@ div ul li a:hover {
 }
 
 .konten {
-    width: 95%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
     padding: 1rem;
     line-height: 1.2;
     color: white;
@@ -90,6 +91,7 @@ p {
 }
 
 /* Media queries for responsiveness */
+
 @media screen and (max-width: 768px) {
     nav{
         display: grid;  /* Use grid layout */
