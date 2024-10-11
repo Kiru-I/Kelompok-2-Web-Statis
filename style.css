@@ -83,7 +83,7 @@ button {
     padding: 2rem 5rem;
     display: flex;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -125,6 +125,11 @@ button a {
 .logo_border {
     border: 0.5rem black solid;
     border-radius: 100%;
+}
+
+.instagram-icon {
+    color: white;
+    font-size: 24px;
 }
 
 @media (max-width: 1024px) {
