@@ -22,8 +22,7 @@ body {
 nav {
     background-color: #00000083;
     backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
+    position: fixed;
     width: 100%;
     padding: 1.25rem;
     display: flex;
@@ -32,7 +31,9 @@ nav {
     z-index: 100;
     flex-wrap: wrap;
 }
-
+.navpad{
+    padding-bottom: 8rem;
+}
 ul {
     border: 0.125rem solid var(rgb(255, 255, 255));
     padding: 0.625rem 0.938rem;
@@ -169,6 +170,9 @@ p {
         padding: 0;
         text-align: center;
         justify-content: space-around;
+    }
+    .navpad{
+        padding-bottom: 10rem;
     }
     .jarak li:nth-child(1), .jarak li:nth-child(2),
     .jarak li:nth-child(3), .jarak li:nth-child(4) {

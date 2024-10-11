@@ -22,6 +22,7 @@ body {
 nav {
     background-color: #00000083;
     backdrop-filter: blur(10px);
+    position: fixed;
     z-index: 100;
     width: 100%;
     padding: 1.25rem;
@@ -63,7 +64,9 @@ nav ul li a:hover {
 div ul li a:hover {
     color: #ce3dff;
 }
-
+.padding-nav-flex{
+    padding-bottom: 7rem;
+}
 button {
     border: 0.125rem solid black;
     background-color: #ffffffd3;
@@ -240,5 +243,11 @@ button a {
         }
         nav ul li {
             margin-bottom: 0.5rem;
+        }
+        .home-content{
+            height: 80vh;
+        }
+        .padding-nav-flex{
+            padding-bottom: 10rem;
         }
     }
