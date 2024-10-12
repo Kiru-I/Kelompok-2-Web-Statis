@@ -92,7 +92,7 @@ div{
     display: block;
     margin: auto;
     border-radius: 2%;
-    border: #ffffff solid;
+    border: rgb(56, 56, 56) solid 2px;
     float: left;
     margin-right: 10px;
 }
