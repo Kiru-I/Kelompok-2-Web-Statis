@@ -94,7 +94,7 @@ div ul li a:hover {
 }
 
 .konten {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     padding: 1rem;
     line-height: 1.2;
@@ -111,7 +111,7 @@ p {
 .lanjut{
     text-decoration: none; 
     top: 90%;
-    left: 92%;
+    left: 90%;
     position: fixed;
     background-color: #00000083;
     backdrop-filter: blur(10px);
@@ -125,7 +125,7 @@ p {
 .balik{
     text-decoration: none; 
     top: 90%;
-    left: 3%;
+    left: 5%;
     position: fixed;
     background-color: #00000083;
     backdrop-filter: blur(5px);

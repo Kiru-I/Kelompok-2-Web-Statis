@@ -184,9 +184,9 @@ button a {
         min-height: 60rem;
     }
     nav{
-        display: grid;  /* Use grid layout */
-        grid-template-columns: repeat(2, 1fr);  /* Create 2 equal-width columns */
-        grid-gap: 10px;  /* Add space between columns */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
         padding: 0;
         text-align: center;
         justify-content: space-around;
@@ -195,13 +195,13 @@ button a {
         border-bottom: white solid 2px;
         grid-column: span 2;
         display: flex;
-        justify-content: space-around;  /* Space out the links */
+        justify-content: space-around;
         padding: 0.5rem;
     }
     .nav2{
-        grid-column: span 2;  /* Span across 2 columns */
+        grid-column: span 2;
         display: flex;
-        justify-content: space-around;  /* Space out the links */
+        justify-content: space-around;
         padding: 0.5rem;
     }
     .home-content {
@@ -226,9 +226,9 @@ button a {
 @media screen and (max-width: 480px) {
     
     nav {
-        display: grid;  /* Use grid layout */
-        grid-template-columns: repeat(2, 1fr);  /* Create 2 equal-width columns */
-        grid-gap: 10px;  /* Add space between columns */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 10px;  
         padding: 0;
         text-align: center;
         justify-content: space-around;
@@ -236,12 +236,12 @@ button a {
     .jarak{
         grid-column: span 2;
         display: flex;
-        justify-content: space-around;  /* Space out the links */
+        justify-content: space-around; 
     }
     .nav2{
-        grid-column: span 2;  /* Span across 2 columns */
+        grid-column: span 2; 
         display: flex;
-        justify-content: space-around;  /* Space out the links */
+        justify-content: space-around;
     }
     nav ul li {
         margin-bottom: 0.5rem;
@@ -250,9 +250,9 @@ button a {
     @media screen and (max-width: 406px){
         
         nav {
-            display: grid;  /* Use grid layout */
-            grid-column: span 2;  /* Create 2 equal-width columns */
-            grid-gap: 10px;  /* Add space between columns */
+            display: grid;  
+            grid-column: span 2;
+            grid-gap: 10px; 
             padding: 0;
             text-align: center;
             justify-content: space-around;
