@@ -24,17 +24,30 @@ nav {
     background-color: #00000083;
     backdrop-filter: blur(10px);
     position: fixed;
+    z-index: 100;
     width: 100%;
     padding: 1.25rem;
     display: flex;
-    align-items:flex-end;
-    justify-content:space-between;
-    z-index: 100;
+    align-items: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .navpad{
     padding-bottom: 8rem;
 }
+.padding-nav-flex{
+    padding-bottom: 7rem;
+}
+
+.arrow-forward-circle-outline {
+    font-size: 24px;
+    background-color: #fff
+    transition #ce3dff 0.3s ease; 
+  }
+  
+a:hover {
+    color: #ce3dff; /* Warna ikon saat di-hover */
+  }
 ul {
     border: 0.125rem solid var(rgb(255, 255, 255));
     padding: 0.625rem 0.938rem;
@@ -57,7 +70,7 @@ li a {
 }
 
 a {
-    color: black;
+    color: white;
 }
 
 nav ul li a:hover {

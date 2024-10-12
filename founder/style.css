@@ -32,9 +32,7 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.navpad{
-    padding-bottom: 8rem;
-}
+
 ul {
     border: 0.125rem solid var(rgb(255, 255, 255));
     padding: 0.625rem 0.938rem;
@@ -139,6 +137,7 @@ p {
         font-size: 1rem;
     }
 }
+
 
 @media screen and (max-width: 480px) {
 
