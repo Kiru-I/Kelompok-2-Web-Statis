@@ -7,6 +7,19 @@
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
 }
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #3e3e3e;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
 
 html, body {
     width: 100%;
@@ -19,7 +32,6 @@ html, body {
     flex-direction: column;
     overflow-x: hidden;    
 }
-
 nav {
     background-color: #00000083;
     backdrop-filter: blur(10px);
@@ -96,14 +108,46 @@ div{
 p {
     text-align: justify;
 }
-
-/* Media queries for responsiveness */
+.lanjut{
+    text-decoration: none; 
+    top: 90%;
+    left: 92%;
+    position: fixed;
+    background-color: #00000083;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; 
+    z-index: 100;
+}
+.balik{
+    text-decoration: none; 
+    top: 90%;
+    left: 3%;
+    position: fixed;
+    background-color: #00000083;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; 
+    z-index: 100;
+}
+.arrow-forward-circle-outline, .arrow-back-circle-outline {
+    font-size: 24px; 
+    width: 24px;
+    height: 24px;
+}
+/* RESPONSIVE */
 
 @media screen and (max-width: 768px) {
     nav{
-        display: grid;  /* Use grid layout */
-        grid-template-columns: repeat(2, 1fr);  /* Create 2 equal-width columns */
-        grid-gap: 10px;  /* Add space between columns */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
         padding: 0;
         text-align: center;
         justify-content: space-around;
@@ -112,13 +156,13 @@ p {
         border-bottom: white solid 2px;
         grid-column: span 2;
         display: flex;
-        justify-content: space-around;  /* Space out the links */
+        justify-content: space-around;
         padding: 0.5rem;
     }
     .nav2{
-        grid-column: span 2;  /* Span across 2 columns */
+        grid-column: span 2;
         display: flex;
-        justify-content: space-around;  /* Space out the links */
+        justify-content: space-around;
         padding: 0.5rem;
     }
     h1 {
@@ -132,13 +176,16 @@ p {
     p {
         font-size: 1rem;
     }
+    .lanjut{
+        left: 85%;
+    }
 }
 
 @media screen and (max-width: 480px) {
     nav{
-        display: grid;  /* Use grid layout */
-        grid-template-columns: repeat(2, 1fr);  /* Create 2 equal-width columns */
-        grid-gap: 10px;  /* Add space between columns */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
         padding: 0;
         text-align: center;
         justify-content: space-around;
@@ -147,13 +194,13 @@ p {
         border-bottom: white solid 2px;
         grid-column: span 2;
         display: flex;
-        justify-content: space-around;  /* Space out the links */
+        justify-content: space-around;
         padding: 0.5rem;
     }
     .nav2{
-        grid-column: span 2;  /* Span across 2 columns */
+        grid-column: span 2;
         display: flex;
-        justify-content: space-around;  /* Space out the links */
+        justify-content: space-around;
         padding: 0.5rem;
     }
     nav ul li {
@@ -175,9 +222,9 @@ p {
 @media screen and (max-width: 406px){
         
     nav {
-        display: grid;  /* Use grid layout */
-        grid-column: span 2;  /* Create 2 equal-width columns */
-        grid-gap: 10px;  /* Add space between columns */
+        display: grid;
+        grid-column: span 2;
+        grid-gap: 10px;  
         padding: 0;
         text-align: center;
         justify-content: space-around;
@@ -197,5 +244,8 @@ p {
     }
     nav ul li {
         margin-bottom: 0.5rem;
+    }
+    .lanjut{
+        left: 75%;
     }
 }
