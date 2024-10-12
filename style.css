@@ -31,6 +31,9 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.navpad {
+    padding-bottom: 8rem;
+}
 
 ul {
     border: 0.125rem solid var(rgb(255, 255, 255));
@@ -83,7 +86,7 @@ button {
     padding: 2rem 5rem;
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -120,16 +123,21 @@ button a {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100%;
+    justify-items: center;
 }
 
 .logo_border {
     border: 0.5rem black solid;
     border-radius: 100%;
 }
-
 .instagram-icon {
-    color: white;
     font-size: 24px;
+    color: #ce3dff
+    transition #ce3dff 0.3s ease; 
+}
+
+.instagram-icon a:hover {
+    color: #ce3dff;
 }
 
 @media (max-width: 1024px) {
